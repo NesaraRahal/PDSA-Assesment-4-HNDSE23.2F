@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
 <Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <NonVisualComponents>
+    <Component class="javax.swing.JLabel" name="jLabel16">
+    </Component>
+  </NonVisualComponents>
   <Properties>
     <Property name="defaultCloseOperation" type="int" value="3"/>
   </Properties>
@@ -84,7 +88,7 @@
                           <Component id="txtVNo" alignment="0" max="32767" attributes="0"/>
                           <Component id="txtVID" alignment="0" max="32767" attributes="0"/>
                       </Group>
-                      <EmptySpace pref="312" max="32767" attributes="0"/>
+                      <EmptySpace pref="369" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -113,7 +117,7 @@
                       </Group>
                       <EmptySpace min="-2" pref="42" max="-2" attributes="0"/>
                       <Component id="btnSave" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace pref="59" max="32767" attributes="0"/>
+                      <EmptySpace pref="115" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -196,10 +200,10 @@
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="235" max="-2" attributes="0"/>
                       <Component id="btnPrev" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace pref="539" max="32767" attributes="0"/>
+                      <EmptySpace pref="596" max="32767" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="1" attributes="0">
-                      <EmptySpace pref="713" max="32767" attributes="0"/>
+                      <EmptySpace pref="770" max="32767" attributes="0"/>
                       <Component id="btnRefresh" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="69" max="-2" attributes="0"/>
                   </Group>
@@ -219,12 +223,12 @@
                               <Component id="txtSNo" alignment="0" max="32767" attributes="0"/>
                               <Component id="txtSID" alignment="0" max="32767" attributes="0"/>
                           </Group>
-                          <EmptySpace pref="258" max="32767" attributes="0"/>
+                          <EmptySpace pref="315" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                   <Group type="103" rootIndex="2" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="1" attributes="0">
-                          <EmptySpace pref="527" max="32767" attributes="0"/>
+                          <EmptySpace pref="584" max="32767" attributes="0"/>
                           <Component id="btnNext" min="-2" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="245" max="-2" attributes="0"/>
                       </Group>
@@ -236,7 +240,7 @@
                   <Group type="102" alignment="1" attributes="0">
                       <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
                       <Component id="btnRefresh" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace pref="234" max="32767" attributes="0"/>
+                      <EmptySpace pref="290" max="32767" attributes="0"/>
                       <Component id="btnPrev" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
                   </Group>
@@ -262,12 +266,12 @@
                               <Component id="jLabel9" alignment="1" min="-2" max="-2" attributes="0"/>
                               <Component id="txtSID" alignment="1" min="-2" max="-2" attributes="0"/>
                           </Group>
-                          <EmptySpace pref="85" max="32767" attributes="0"/>
+                          <EmptySpace pref="141" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                   <Group type="103" rootIndex="2" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="1" attributes="0">
-                          <EmptySpace pref="271" max="32767" attributes="0"/>
+                          <EmptySpace pref="327" max="32767" attributes="0"/>
                           <Component id="btnNext" min="-2" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
                       </Group>
@@ -388,7 +392,7 @@
                           <Component id="jLabel14" alignment="0" min="-2" max="-2" attributes="0"/>
                           <Component id="jLabel15" alignment="0" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace pref="120" max="32767" attributes="0"/>
+                      <EmptySpace pref="149" max="32767" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" attributes="0">
                               <Group type="103" groupAlignment="0" max="-2" attributes="0">
@@ -403,8 +407,8 @@
                           </Group>
                           <Group type="102" attributes="0">
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="txtServiceDate" pref="146" max="32767" attributes="0"/>
-                                  <Component id="txtRepairCharge" pref="146" max="32767" attributes="0"/>
+                                  <Component id="txtServiceDate" pref="174" max="32767" attributes="0"/>
+                                  <Component id="txtRepairCharge" pref="174" max="32767" attributes="0"/>
                               </Group>
                               <EmptySpace min="250" pref="250" max="-2" attributes="0"/>
                           </Group>
@@ -412,7 +416,7 @@
                   </Group>
                   <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="1" attributes="0">
-                          <EmptySpace pref="468" max="32767" attributes="0"/>
+                          <EmptySpace pref="525" max="32767" attributes="0"/>
                           <Component id="btnCompleted1" min="-2" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="257" max="-2" attributes="0"/>
                       </Group>
@@ -455,11 +459,11 @@
                           <Component id="jLabel15" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="txtServiceDate" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace pref="48" max="32767" attributes="0"/>
+                      <EmptySpace pref="104" max="32767" attributes="0"/>
                   </Group>
                   <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="1" attributes="0">
-                          <EmptySpace pref="275" max="32767" attributes="0"/>
+                          <EmptySpace pref="331" max="32767" attributes="0"/>
                           <Component id="btnCompleted1" min="-2" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
                       </Group>
@@ -576,7 +580,7 @@
             </Component>
           </SubComponents>
         </Container>
-        <Component class="javax.swing.JLabel" name="jLabel16">
+        <Container class="javax.swing.JPanel" name="jPanel4">
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout" value="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout$JTabbedPaneConstraintsDescription">
               <JTabbedPaneConstraints tabName="Income History">
@@ -584,7 +588,158 @@
               </JTabbedPaneConstraints>
             </Constraint>
           </Constraints>
-        </Component>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="186" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                          <Group type="102" attributes="0">
+                              <Component id="btnIncomePrev" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="32767" attributes="0"/>
+                              <Component id="btnIncomeNext" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="jLabel22" alignment="0" min="-2" pref="98" max="-2" attributes="0"/>
+                                  <Component id="jLabel24" alignment="0" min="-2" pref="98" max="-2" attributes="0"/>
+                                  <Component id="jLabel26" alignment="0" min="-2" pref="98" max="-2" attributes="0"/>
+                                  <Component id="jLabel27" alignment="0" min="-2" pref="98" max="-2" attributes="0"/>
+                                  <Component id="jLabel25" alignment="0" min="-2" pref="98" max="-2" attributes="0"/>
+                                  <Component id="jLabel23" alignment="0" min="-2" pref="95" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="134" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="txtIncomeType1" min="-2" pref="116" max="-2" attributes="0"/>
+                                  <Component id="txtIncomeDate" min="-2" pref="116" max="-2" attributes="0"/>
+                                  <Component id="txtIncomeCost" min="-2" pref="116" max="-2" attributes="0"/>
+                                  <Component id="txtIncomeNo" min="-2" pref="116" max="-2" attributes="0"/>
+                                  <Component id="txtIncomeModel" min="-2" pref="116" max="-2" attributes="0"/>
+                                  <Component id="txtIncomeID" min="-2" pref="116" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                      </Group>
+                      <EmptySpace pref="377" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="jLabel23" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+                          <Component id="txtIncomeType1" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="jLabel22" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+                          <Component id="txtIncomeModel" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="jLabel24" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+                          <Component id="txtIncomeNo" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="jLabel26" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+                          <Component id="txtIncomeID" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="jLabel27" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+                          <Component id="txtIncomeCost" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="jLabel25" alignment="3" min="-2" pref="26" max="-2" attributes="0"/>
+                          <Component id="txtIncomeDate" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="btnIncomeNext" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="btnIncomePrev" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace pref="41" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Component class="javax.swing.JLabel" name="jLabel22">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Vehicle Model"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLabel23">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Vehicle Type"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLabel24">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Vehicle No"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLabel25">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Completed Date"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLabel26">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Vehicle ID"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="jLabel27">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Service Charge"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="txtIncomeModel">
+              <Properties>
+                <Property name="editable" type="boolean" value="false"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="txtIncomeType1">
+              <Properties>
+                <Property name="editable" type="boolean" value="false"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="txtIncomeNo">
+              <Properties>
+                <Property name="editable" type="boolean" value="false"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="txtIncomeCost">
+              <Properties>
+                <Property name="editable" type="boolean" value="false"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="txtIncomeID">
+              <Properties>
+                <Property name="editable" type="boolean" value="false"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JTextField" name="txtIncomeDate">
+              <Properties>
+                <Property name="editable" type="boolean" value="false"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JButton" name="btnIncomeNext">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Next"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JButton" name="btnIncomePrev">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Previous"/>
+              </Properties>
+            </Component>
+          </SubComponents>
+        </Container>
       </SubComponents>
     </Container>
   </SubComponents>
