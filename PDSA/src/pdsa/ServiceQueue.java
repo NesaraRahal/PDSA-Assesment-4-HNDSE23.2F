@@ -2,6 +2,7 @@ package pdsa;
 
 import javax.swing.JOptionPane;
 
+// ServiceQueue class to handle queue and also to handle next and prev node in doubly linkelist
 public class ServiceQueue {
     RegistrationLinkedList rl;
     Node rear;
@@ -18,7 +19,7 @@ public class ServiceQueue {
     }
 
 
-
+    // Insertion to queue
     public void serviceEnqueue(String vType, String VModel, String VNo, int VID) {
         rl.insertDetails(vType, VModel, VNo, VID);
         if (rear == null) {
@@ -33,7 +34,7 @@ public class ServiceQueue {
     public void display() {
         rl.display();
     }
-
+     // method with returning are for refresh button
     public String returningRegType() {
         front = rl.head;
         if (!isEmpty()) {
@@ -66,7 +67,9 @@ public class ServiceQueue {
     }
     
     
-
+   //Below methods are for next button and service completed button
+    /* Decide to use the same Front vaibale for the next and prev in linkedlist becaue it is equal to head. 
+    With same time queue is also maintained using front variable  * */
     public String serviceApprovedType() {
         if (!isEmpty()) {
             if (front.Next != null) {
@@ -78,7 +81,7 @@ public class ServiceQueue {
         }
         return null;
     }
-
+// * This method is the for the previous button. The reason for using same front because we assigned front to head.
     public String serviceApprovedTypeLeft() {
         if (!isEmpty() && front.Prev != rl.head.Prev) {
             front = front.Prev;
@@ -96,6 +99,7 @@ public class ServiceQueue {
         return null;
     }
 
+    
     public String serviceApprovedNo() {
         if (!isEmpty()) {
             return front.No;

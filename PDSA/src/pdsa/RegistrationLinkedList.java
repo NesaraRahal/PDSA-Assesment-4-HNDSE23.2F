@@ -8,6 +8,7 @@ package pdsa;
  *
  * @author User
  */
+// RegistrationLinkedList for doubly linkedlist
 public class RegistrationLinkedList {
     Node head;
     
@@ -15,6 +16,7 @@ public class RegistrationLinkedList {
         head = null;
     }
     
+    //insertion to doubly linkedlist (insertAtEnding)
     public void insertDetails(String type, String model, String no, int id){
         if(head == null){
             Node new_node = new Node();
@@ -43,6 +45,7 @@ public class RegistrationLinkedList {
         }
     }
     
+    //temporary method for testing and debugging
     public void display(){
         Node current_node = head;
 		

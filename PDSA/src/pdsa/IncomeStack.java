@@ -57,9 +57,10 @@ public class IncomeStack {
         return null;
     }
     
+    
         public String popModel(){
         if(isEmpty() == true){
-            System.err.println("No more serviced vehicles to pop");
+           // System.err.println("No more serviced vehicles to pop");
         }else{
             String popModel = top.model;
            return popModel;
@@ -69,7 +70,7 @@ public class IncomeStack {
         
     public String popNo(){
         if(isEmpty() == true){
-            System.err.println("No more serviced vehicles to pop");
+          //  System.err.println("No more serviced vehicles to pop");
         }else{
             String popNo = top.No;
            return popNo;
@@ -79,7 +80,7 @@ public class IncomeStack {
     
     public int popID(){
         if(isEmpty() == true){
-            System.err.println("No more serviced vehicles to pop");
+            //System.err.println("No more serviced vehicles to pop");
         }else{
            int popID = top.ID;
            return popID;
@@ -89,7 +90,7 @@ public class IncomeStack {
     
     public double popServiceCost(){
         if(isEmpty() == true){
-            System.err.println("No more serviced vehicles to pop");
+          //  System.err.println("No more serviced vehicles to pop");
         }else{
            double popCost = top.serviceIncome;
            return popCost;
@@ -99,7 +100,7 @@ public class IncomeStack {
     
     public String popCompletedDate(){
         if(isEmpty() == true){
-            System.err.println("No more serviced vehicles to pop");
+           // System.err.println("No more serviced vehicles to pop");
         }else{
            String popDate = top.date;
            top = top.Next;
@@ -107,5 +108,7 @@ public class IncomeStack {
         }
         return null;
     }
+    
+    
     
 }

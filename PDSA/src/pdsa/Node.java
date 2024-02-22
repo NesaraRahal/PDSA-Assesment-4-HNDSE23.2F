@@ -8,6 +8,8 @@ package pdsa;
  *
  * @author User
  */
+
+// Node class to handle node
 public class Node {
     String type;
     String model;
