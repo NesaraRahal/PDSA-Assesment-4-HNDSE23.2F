@@ -80,17 +80,32 @@ public class VehicleDashBoard extends javax.swing.JFrame {
         txtIncomeID = new javax.swing.JTextField();
         txtIncomeDate = new javax.swing.JTextField();
         btnIncomeNext = new javax.swing.JButton();
-        btnIncomePrev = new javax.swing.JButton();
         btnHistoryRefresh = new javax.swing.JButton();
         jPanel5 = new javax.swing.JPanel();
         jLabel17 = new javax.swing.JLabel();
         txtMaxIncome = new javax.swing.JTextField();
         jButton1 = new javax.swing.JButton();
+        jPanel6 = new javax.swing.JPanel();
+        jLabel18 = new javax.swing.JLabel();
+        jLabel19 = new javax.swing.JLabel();
+        jLabel20 = new javax.swing.JLabel();
+        jLabel21 = new javax.swing.JLabel();
+        jLabel28 = new javax.swing.JLabel();
+        jLabel29 = new javax.swing.JLabel();
+        txtHistoryType = new javax.swing.JTextField();
+        txtHistoryModel = new javax.swing.JTextField();
+        txtHistoryNo = new javax.swing.JTextField();
+        txtHistoryID = new javax.swing.JTextField();
+        txtHistoryIncome = new javax.swing.JTextField();
+        txtHistoryDate = new javax.swing.JTextField();
+        txtRefresh = new javax.swing.JButton();
+        txtHistoryPrev = new javax.swing.JButton();
+        txtHistoryNext = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        jLabel1.setText("Vehicle Service Registration System");
+        jLabel1.setText("Vehicle Service Management System");
 
         jLabel2.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jLabel2.setText("Vehicle Type");
@@ -153,7 +168,7 @@ public class VehicleDashBoard extends javax.swing.JFrame {
                     .addComponent(txtVModel)
                     .addComponent(txtVNo)
                     .addComponent(txtVID))
-                .addContainerGap(369, Short.MAX_VALUE))
+                .addContainerGap(357, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -249,9 +264,9 @@ public class VehicleDashBoard extends javax.swing.JFrame {
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGap(235, 235, 235)
                 .addComponent(btnPrev)
-                .addContainerGap(596, Short.MAX_VALUE))
+                .addContainerGap(584, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                .addContainerGap(770, Short.MAX_VALUE)
+                .addContainerGap(758, Short.MAX_VALUE)
                 .addComponent(btnRefresh)
                 .addGap(69, 69, 69))
             .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -268,10 +283,10 @@ public class VehicleDashBoard extends javax.swing.JFrame {
                         .addComponent(txtSModel)
                         .addComponent(txtSNo)
                         .addComponent(txtSID))
-                    .addContainerGap(315, Short.MAX_VALUE)))
+                    .addContainerGap(303, Short.MAX_VALUE)))
             .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                    .addContainerGap(584, Short.MAX_VALUE)
+                    .addContainerGap(572, Short.MAX_VALUE)
                     .addComponent(btnNext)
                     .addGap(245, 245, 245)))
         );
@@ -405,16 +420,16 @@ public class VehicleDashBoard extends javax.swing.JFrame {
                             .addComponent(txtCType))
                         .addGap(97, 97, 97)
                         .addComponent(btnCRefreshed)
-                        .addGap(53, 81, Short.MAX_VALUE))
+                        .addGap(53, 69, Short.MAX_VALUE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
                         .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(txtCID, javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(txtServiceDate, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 174, Short.MAX_VALUE)
-                            .addComponent(txtRepairCharge, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 174, Short.MAX_VALUE))
+                            .addComponent(txtServiceDate, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 162, Short.MAX_VALUE)
+                            .addComponent(txtRepairCharge, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 162, Short.MAX_VALUE))
                         .addGap(250, 250, 250))))
             .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
-                    .addContainerGap(525, Short.MAX_VALUE)
+                    .addContainerGap(513, Short.MAX_VALUE)
                     .addComponent(btnCompleted1)
                     .addGap(257, 257, 257)))
         );
@@ -481,17 +496,10 @@ public class VehicleDashBoard extends javax.swing.JFrame {
 
         txtIncomeDate.setEditable(false);
 
-        btnIncomeNext.setText("Next");
+        btnIncomeNext.setText("Move to history");
         btnIncomeNext.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnIncomeNextActionPerformed(evt);
-            }
-        });
-
-        btnIncomePrev.setText("Previous");
-        btnIncomePrev.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnIncomePrevActionPerformed(evt);
             }
         });
 
@@ -508,11 +516,8 @@ public class VehicleDashBoard extends javax.swing.JFrame {
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel4Layout.createSequentialGroup()
                 .addGap(186, 186, 186)
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                    .addGroup(jPanel4Layout.createSequentialGroup()
-                        .addComponent(btnIncomePrev)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(btnIncomeNext))
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(btnIncomeNext)
                     .addGroup(jPanel4Layout.createSequentialGroup()
                         .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel22, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -529,7 +534,7 @@ public class VehicleDashBoard extends javax.swing.JFrame {
                             .addComponent(txtIncomeNo, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(txtIncomeModel, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(txtIncomeID, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 195, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 183, Short.MAX_VALUE)
                 .addComponent(btnHistoryRefresh)
                 .addGap(110, 110, 110))
         );
@@ -562,13 +567,11 @@ public class VehicleDashBoard extends javax.swing.JFrame {
                     .addComponent(jLabel25, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(txtIncomeDate, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(31, 31, 31)
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnIncomeNext)
-                    .addComponent(btnIncomePrev))
+                .addComponent(btnIncomeNext)
                 .addContainerGap(41, Short.MAX_VALUE))
         );
 
-        jTabbedPane1.addTab("Income History", jPanel4);
+        jTabbedPane1.addTab("Services that completed today", jPanel4);
 
         jLabel17.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jLabel17.setText("Max Income");
@@ -594,7 +597,7 @@ public class VehicleDashBoard extends javax.swing.JFrame {
                         .addComponent(jLabel17)
                         .addGap(182, 182, 182)
                         .addComponent(txtMaxIncome, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(337, Short.MAX_VALUE))
+                .addContainerGap(325, Short.MAX_VALUE))
         );
         jPanel5Layout.setVerticalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -610,6 +613,127 @@ public class VehicleDashBoard extends javax.swing.JFrame {
 
         jTabbedPane1.addTab("Max Income", jPanel5);
 
+        jLabel18.setText("Vehicle Type");
+
+        jLabel19.setText("Vehicle Model");
+
+        jLabel20.setText("Vehicle No");
+
+        jLabel21.setText("Vehicle ID");
+
+        jLabel28.setText("Service income");
+
+        jLabel29.setText("Serviced Date");
+
+        txtHistoryType.setEditable(false);
+
+        txtHistoryModel.setEditable(false);
+
+        txtHistoryNo.setEditable(false);
+
+        txtHistoryID.setEditable(false);
+
+        txtHistoryIncome.setEditable(false);
+
+        txtHistoryDate.setEditable(false);
+
+        txtRefresh.setText("Refresh");
+        txtRefresh.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtRefreshActionPerformed(evt);
+            }
+        });
+
+        txtHistoryPrev.setText("Previous");
+        txtHistoryPrev.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtHistoryPrevActionPerformed(evt);
+            }
+        });
+
+        txtHistoryNext.setText("Next");
+        txtHistoryNext.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtHistoryNextActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
+        jPanel6.setLayout(jPanel6Layout);
+        jPanel6Layout.setHorizontalGroup(
+            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel6Layout.createSequentialGroup()
+                .addGap(235, 235, 235)
+                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel18)
+                    .addComponent(jLabel19)
+                    .addComponent(jLabel20)
+                    .addComponent(jLabel21)
+                    .addComponent(jLabel28)
+                    .addComponent(jLabel29))
+                .addGap(138, 138, 138)
+                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel6Layout.createSequentialGroup()
+                        .addComponent(txtHistoryType, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 154, Short.MAX_VALUE)
+                        .addComponent(txtRefresh)
+                        .addGap(95, 95, 95))
+                    .addGroup(jPanel6Layout.createSequentialGroup()
+                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(txtHistoryNext)
+                            .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(txtHistoryDate, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(txtHistoryIncome, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(txtHistoryID, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(txtHistoryNo, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(txtHistoryModel, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+            .addGroup(jPanel6Layout.createSequentialGroup()
+                .addGap(224, 224, 224)
+                .addComponent(txtHistoryPrev)
+                .addGap(0, 0, Short.MAX_VALUE))
+        );
+        jPanel6Layout.setVerticalGroup(
+            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel6Layout.createSequentialGroup()
+                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel6Layout.createSequentialGroup()
+                        .addGap(38, 38, 38)
+                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel18)
+                            .addComponent(txtHistoryType, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(jPanel6Layout.createSequentialGroup()
+                        .addGap(19, 19, 19)
+                        .addComponent(txtRefresh)))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel19)
+                    .addComponent(txtHistoryModel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel20)
+                    .addComponent(txtHistoryNo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel21)
+                    .addComponent(txtHistoryID, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel28)
+                    .addComponent(txtHistoryIncome, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel29)
+                    .addComponent(txtHistoryDate, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 46, Short.MAX_VALUE)
+                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(txtHistoryPrev)
+                    .addComponent(txtHistoryNext))
+                .addGap(39, 39, 39))
+        );
+
+        jTabbedPane1.addTab("Income History", jPanel6);
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -618,16 +742,19 @@ public class VehicleDashBoard extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel1)
                 .addGap(284, 284, 284))
-            .addComponent(jTabbedPane1)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jTabbedPane1)
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(28, 28, 28)
                 .addComponent(jLabel1)
-                .addGap(39, 39, 39)
+                .addGap(30, 30, 30)
                 .addComponent(jTabbedPane1)
-                .addContainerGap())
+                .addGap(15, 15, 15))
         );
 
         pack();
@@ -784,17 +911,21 @@ public class VehicleDashBoard extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_txtServiceDateActionPerformed
 
+    //Creating a object for history class
+    History h = new History();
     private void btnHistoryRefreshActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnHistoryRefreshActionPerformed
         // TODO add your handling code here:
          is.tempDisplay();
         String historyType = is.popType();
         String historyModel = is.popModel();
         String historyNo = is.popNo();
-        String historyID = Integer.toString(is.popID());
+        int ID = is.popID();
+        String historyID = Integer.toString(ID);
         double income = is.popServiceCost();
         String historyIncome = Double.toString(is.popServiceCost());
         String date = is.popCompletedDate();
         
+        h.insertHistory(historyType, historyModel, historyNo, ID, income, historyType);
         //mi.insert(income);
         
         txtIncomeType.setText(historyType);
@@ -804,27 +935,26 @@ public class VehicleDashBoard extends javax.swing.JFrame {
         txtIncomeCost.setText(historyIncome);
         txtIncomeDate.setText(date);
         
+        
+        
     }//GEN-LAST:event_btnHistoryRefreshActionPerformed
         MaxIncome mi = new MaxIncome();
-
-    private void btnIncomePrevActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnIncomePrevActionPerformed
-        // TODO add your handling code here:
-        mi.tempDisplay();;
-    }//GEN-LAST:event_btnIncomePrevActionPerformed
 
     private void btnIncomeNextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnIncomeNextActionPerformed
         // TODO add your handling code here:
         
         double newIncome = Double.parseDouble(txtIncomeCost.getText());
         
-                String historyType = is.popType();
+        String historyType = is.popType();
         String historyModel = is.popModel();
         String historyNo = is.popNo();
-        String historyID = Integer.toString(is.popID());
+        int ID = is.popID();
+        String historyID = Integer.toString(ID);
         double income = is.popServiceCost();
         String historyIncome = Double.toString(income);
         String date = is.popCompletedDate();
         
+        h.insertHistory(historyType, historyModel, historyNo, ID, income, historyType);
         mi.insert(newIncome);
         
         txtIncomeType.setText(historyType);
@@ -840,6 +970,58 @@ public class VehicleDashBoard extends javax.swing.JFrame {
         double max = mi.maxIncome();
         txtMaxIncome.setText(Double.toString(max));
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void txtRefreshActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtRefreshActionPerformed
+        // TODO add your handling code here:
+        String type = h.returninHisotryType();
+        String model = h.returninHisotryModel();
+        String no = h.returninHisotryNo();
+        String id= Integer.toString(h.returninHisotryID());
+        String income =Double.toString(h.returninHisotryIncome());
+        String Date = h.returninHisotryDate();
+        
+        txtHistoryType.setText(type);
+        txtHistoryModel.setText(model);
+        txtHistoryNo.setText(no);
+        txtHistoryID.setText(id);
+        txtHistoryIncome.setText(income);
+        txtHistoryDate.setText(Date);
+        
+    }//GEN-LAST:event_txtRefreshActionPerformed
+
+    private void txtHistoryNextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtHistoryNextActionPerformed
+        // TODO add your handling code here:
+        String type = h.nextHistoryType();
+        String model = h.returninHisotryModel();
+        String no = h.returninHisotryNo();
+        String id= Integer.toString(h.returninHisotryID());
+        String income =Double.toString(h.returninHisotryIncome());
+        String Date = h.returninHisotryDate();
+        
+        txtHistoryType.setText(type);
+        txtHistoryModel.setText(model);
+        txtHistoryNo.setText(no);
+        txtHistoryID.setText(id);
+        txtHistoryIncome.setText(income);
+        txtHistoryDate.setText(Date);
+    }//GEN-LAST:event_txtHistoryNextActionPerformed
+
+    private void txtHistoryPrevActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtHistoryPrevActionPerformed
+        // TODO add your handling code here:
+        String type = h.prevHistoryType();
+        String model = h.returninHisotryModel();
+        String no = h.returninHisotryNo();
+        String id= Integer.toString(h.returninHisotryID());
+        String income =Double.toString(h.returninHisotryIncome());
+        String Date = h.returninHisotryDate();
+        
+        txtHistoryType.setText(type);
+        txtHistoryModel.setText(model);
+        txtHistoryNo.setText(no);
+        txtHistoryID.setText(id);
+        txtHistoryIncome.setText(income);
+        txtHistoryDate.setText(Date);
+    }//GEN-LAST:event_txtHistoryPrevActionPerformed
 
     /**
      * @param args the command line arguments
@@ -881,7 +1063,6 @@ public class VehicleDashBoard extends javax.swing.JFrame {
     private javax.swing.JButton btnCompleted1;
     private javax.swing.JButton btnHistoryRefresh;
     private javax.swing.JButton btnIncomeNext;
-    private javax.swing.JButton btnIncomePrev;
     private javax.swing.JButton btnNext;
     private javax.swing.JButton btnPrev;
     private javax.swing.JButton btnRefresh;
@@ -896,13 +1077,19 @@ public class VehicleDashBoard extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
+    private javax.swing.JLabel jLabel18;
+    private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel20;
+    private javax.swing.JLabel jLabel21;
     private javax.swing.JLabel jLabel22;
     private javax.swing.JLabel jLabel23;
     private javax.swing.JLabel jLabel24;
     private javax.swing.JLabel jLabel25;
     private javax.swing.JLabel jLabel26;
     private javax.swing.JLabel jLabel27;
+    private javax.swing.JLabel jLabel28;
+    private javax.swing.JLabel jLabel29;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
@@ -915,11 +1102,20 @@ public class VehicleDashBoard extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
+    private javax.swing.JPanel jPanel6;
     private javax.swing.JTabbedPane jTabbedPane1;
     private javax.swing.JTextField txtCID;
     private javax.swing.JTextField txtCModel;
     private javax.swing.JTextField txtCNo;
     private javax.swing.JTextField txtCType;
+    private javax.swing.JTextField txtHistoryDate;
+    private javax.swing.JTextField txtHistoryID;
+    private javax.swing.JTextField txtHistoryIncome;
+    private javax.swing.JTextField txtHistoryModel;
+    private javax.swing.JButton txtHistoryNext;
+    private javax.swing.JTextField txtHistoryNo;
+    private javax.swing.JButton txtHistoryPrev;
+    private javax.swing.JTextField txtHistoryType;
     private javax.swing.JTextField txtIncomeCost;
     private javax.swing.JTextField txtIncomeDate;
     private javax.swing.JTextField txtIncomeID;
@@ -927,6 +1123,7 @@ public class VehicleDashBoard extends javax.swing.JFrame {
     private javax.swing.JTextField txtIncomeNo;
     private javax.swing.JTextField txtIncomeType;
     private javax.swing.JTextField txtMaxIncome;
+    private javax.swing.JButton txtRefresh;
     private javax.swing.JTextField txtRepairCharge;
     private javax.swing.JTextField txtSID;
     private javax.swing.JTextField txtSModel;
