@@ -39,6 +39,8 @@ public class IncomeStack {
         top = new_node;
     }
     
+    
+    
     public void tempDisplay(){
         System.out.println(top.ID);
     }

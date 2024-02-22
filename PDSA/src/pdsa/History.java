@@ -45,6 +45,50 @@ public class History {
         }
     }
     
+    // To find the vehicle details realted to maximum income
+     public String findTypeByIncome(double searchIncome) {
+        Node current = head;
+
+        while (current != null) {
+            if (current.serviceIncome == searchIncome) {
+                return current.type;
+            }
+
+            current = current.Next;
+        }
+
+        return null;
+    }
+     
+    public String findModelByIncome(double searchIncome) {
+        Node current = head;
+
+        while (current != null) {
+            if (current.serviceIncome == searchIncome) {
+                return current.model;
+            }
+
+            current = current.Next;
+        }
+
+        return null;
+    }
+    
+    public String findNoByIncome(double searchIncome) {
+        Node current = head;
+
+        while (current != null) {
+            if (current.serviceIncome == searchIncome) {
+                return current.No;
+            }
+
+            current = current.Next;
+        }
+
+        return null;
+    }
+     
+    
     public String returninHisotryType(){
         return head.type;
     }
