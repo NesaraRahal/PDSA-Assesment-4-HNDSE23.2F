@@ -4,6 +4,8 @@
  */
 package pdsa;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author User
@@ -81,6 +83,23 @@ public class VehicleDashBoard extends javax.swing.JFrame {
         txtIncomeDate = new javax.swing.JTextField();
         btnIncomeNext = new javax.swing.JButton();
         btnHistoryRefresh = new javax.swing.JButton();
+        btnIncomeNext1 = new javax.swing.JButton();
+        jLabel33 = new javax.swing.JLabel();
+        jLabel34 = new javax.swing.JLabel();
+        jLabel35 = new javax.swing.JLabel();
+        jLabel36 = new javax.swing.JLabel();
+        jLabel37 = new javax.swing.JLabel();
+        jLabel38 = new javax.swing.JLabel();
+        txtIncomeDate1 = new javax.swing.JTextField();
+        txtIncomeCost1 = new javax.swing.JTextField();
+        txtIncomeID1 = new javax.swing.JTextField();
+        txtIncomeNo1 = new javax.swing.JTextField();
+        txtIncomeModel1 = new javax.swing.JTextField();
+        txtIncomeType1 = new javax.swing.JTextField();
+        jLabel39 = new javax.swing.JLabel();
+        jLabel40 = new javax.swing.JLabel();
+        prev = new javax.swing.JButton();
+        next = new javax.swing.JButton();
         jPanel6 = new javax.swing.JPanel();
         jLabel18 = new javax.swing.JLabel();
         jLabel19 = new javax.swing.JLabel();
@@ -174,7 +193,7 @@ public class VehicleDashBoard extends javax.swing.JFrame {
                     .addComponent(txtVModel)
                     .addComponent(txtVNo)
                     .addComponent(txtVID))
-                .addContainerGap(357, Short.MAX_VALUE))
+                .addContainerGap(377, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -197,7 +216,7 @@ public class VehicleDashBoard extends javax.swing.JFrame {
                     .addComponent(txtVID, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(42, 42, 42)
                 .addComponent(btnSave)
-                .addContainerGap(115, Short.MAX_VALUE))
+                .addContainerGap(140, Short.MAX_VALUE))
         );
 
         jTabbedPane1.addTab("Registration", jPanel1);
@@ -270,9 +289,9 @@ public class VehicleDashBoard extends javax.swing.JFrame {
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGap(235, 235, 235)
                 .addComponent(btnPrev)
-                .addContainerGap(584, Short.MAX_VALUE))
+                .addContainerGap(604, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                .addContainerGap(758, Short.MAX_VALUE)
+                .addContainerGap(778, Short.MAX_VALUE)
                 .addComponent(btnRefresh)
                 .addGap(69, 69, 69))
             .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -289,10 +308,10 @@ public class VehicleDashBoard extends javax.swing.JFrame {
                         .addComponent(txtSModel)
                         .addComponent(txtSNo)
                         .addComponent(txtSID))
-                    .addContainerGap(303, Short.MAX_VALUE)))
+                    .addContainerGap(323, Short.MAX_VALUE)))
             .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                    .addContainerGap(572, Short.MAX_VALUE)
+                    .addContainerGap(592, Short.MAX_VALUE)
                     .addComponent(btnNext)
                     .addGap(245, 245, 245)))
         );
@@ -301,7 +320,7 @@ public class VehicleDashBoard extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
                 .addGap(14, 14, 14)
                 .addComponent(btnRefresh)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 290, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 315, Short.MAX_VALUE)
                 .addComponent(btnPrev)
                 .addGap(18, 18, 18))
             .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -322,10 +341,10 @@ public class VehicleDashBoard extends javax.swing.JFrame {
                     .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                         .addComponent(jLabel9)
                         .addComponent(txtSID, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addContainerGap(141, Short.MAX_VALUE)))
+                    .addContainerGap(166, Short.MAX_VALUE)))
             .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                    .addContainerGap(327, Short.MAX_VALUE)
+                    .addContainerGap(352, Short.MAX_VALUE)
                     .addComponent(btnNext)
                     .addGap(18, 18, 18)))
         );
@@ -426,16 +445,16 @@ public class VehicleDashBoard extends javax.swing.JFrame {
                             .addComponent(txtCType))
                         .addGap(97, 97, 97)
                         .addComponent(btnCRefreshed)
-                        .addGap(53, 69, Short.MAX_VALUE))
+                        .addGap(53, 89, Short.MAX_VALUE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
                         .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(txtCID, javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(txtServiceDate, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 162, Short.MAX_VALUE)
-                            .addComponent(txtRepairCharge, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 162, Short.MAX_VALUE))
+                            .addComponent(txtServiceDate, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 182, Short.MAX_VALUE)
+                            .addComponent(txtRepairCharge, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 182, Short.MAX_VALUE))
                         .addGap(250, 250, 250))))
             .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
-                    .addContainerGap(513, Short.MAX_VALUE)
+                    .addContainerGap(533, Short.MAX_VALUE)
                     .addComponent(btnCompleted1)
                     .addGap(257, 257, 257)))
         );
@@ -468,10 +487,10 @@ public class VehicleDashBoard extends javax.swing.JFrame {
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel15)
                     .addComponent(txtServiceDate, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(104, Short.MAX_VALUE))
+                .addContainerGap(129, Short.MAX_VALUE))
             .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
-                    .addContainerGap(331, Short.MAX_VALUE)
+                    .addContainerGap(356, Short.MAX_VALUE)
                     .addComponent(btnCompleted1)
                     .addGap(14, 14, 14)))
         );
@@ -502,17 +521,69 @@ public class VehicleDashBoard extends javax.swing.JFrame {
 
         txtIncomeDate.setEditable(false);
 
-        btnIncomeNext.setText("Move to history");
+        btnIncomeNext.setText("Confirm Payment");
         btnIncomeNext.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnIncomeNextActionPerformed(evt);
             }
         });
 
+        btnHistoryRefresh.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         btnHistoryRefresh.setText("Refresh");
         btnHistoryRefresh.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnHistoryRefreshActionPerformed(evt);
+            }
+        });
+
+        btnIncomeNext1.setText("Confirm Payment");
+        btnIncomeNext1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnIncomeNext1ActionPerformed(evt);
+            }
+        });
+
+        jLabel33.setText("Vehicle Type");
+
+        jLabel34.setText("Vehicle Model");
+
+        jLabel35.setText("Vehicle No");
+
+        jLabel36.setText("Vehicle ID");
+
+        jLabel37.setText("Service Charge");
+
+        jLabel38.setText("Completed Date");
+
+        txtIncomeDate1.setEditable(false);
+
+        txtIncomeCost1.setEditable(false);
+
+        txtIncomeID1.setEditable(false);
+
+        txtIncomeNo1.setEditable(false);
+
+        txtIncomeModel1.setEditable(false);
+
+        txtIncomeType1.setEditable(false);
+
+        jLabel39.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel39.setText("Quick Payment");
+
+        jLabel40.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel40.setText("Late Payment");
+
+        prev.setText("Previous");
+        prev.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                prevActionPerformed(evt);
+            }
+        });
+
+        next.setText("Next");
+        next.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                nextActionPerformed(evt);
             }
         });
 
@@ -521,60 +592,129 @@ public class VehicleDashBoard extends javax.swing.JFrame {
         jPanel4Layout.setHorizontalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel4Layout.createSequentialGroup()
-                .addGap(186, 186, 186)
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(btnIncomeNext)
-                    .addGroup(jPanel4Layout.createSequentialGroup()
-                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel22, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel24, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel26, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel27, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel25, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel23, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(134, 134, 134)
-                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(txtIncomeType, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(txtIncomeDate, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(txtIncomeCost, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(txtIncomeNo, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(txtIncomeModel, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(txtIncomeID, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 183, Short.MAX_VALUE)
-                .addComponent(btnHistoryRefresh)
-                .addGap(110, 110, 110))
+                .addGap(145, 145, 145)
+                .addComponent(jLabel39)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel40)
+                .addGap(130, 130, 130))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
+                .addContainerGap(69, Short.MAX_VALUE)
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
+                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(jPanel4Layout.createSequentialGroup()
+                                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel22, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jLabel24, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jLabel26, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jLabel27, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jLabel25, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jLabel23, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(134, 134, 134)
+                                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(txtIncomeDate, javax.swing.GroupLayout.DEFAULT_SIZE, 116, Short.MAX_VALUE)
+                                    .addComponent(txtIncomeCost, javax.swing.GroupLayout.DEFAULT_SIZE, 116, Short.MAX_VALUE)
+                                    .addComponent(txtIncomeNo, javax.swing.GroupLayout.DEFAULT_SIZE, 116, Short.MAX_VALUE)
+                                    .addComponent(txtIncomeModel, javax.swing.GroupLayout.DEFAULT_SIZE, 116, Short.MAX_VALUE)
+                                    .addComponent(txtIncomeID, javax.swing.GroupLayout.DEFAULT_SIZE, 116, Short.MAX_VALUE)
+                                    .addComponent(txtIncomeType, javax.swing.GroupLayout.DEFAULT_SIZE, 116, Short.MAX_VALUE)))
+                            .addComponent(btnIncomeNext))
+                        .addGap(108, 108, 108)
+                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addGroup(jPanel4Layout.createSequentialGroup()
+                                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel34, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jLabel35, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jLabel36, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jLabel37, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jLabel33, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jLabel38, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(134, 134, 134)
+                                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(txtIncomeDate1, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(txtIncomeCost1, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(txtIncomeNo1, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(txtIncomeModel1, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(txtIncomeID1, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(txtIncomeType1, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addGroup(jPanel4Layout.createSequentialGroup()
+                                .addComponent(prev)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(next)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(btnIncomeNext1)))
+                        .addGap(46, 46, 46))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
+                        .addComponent(btnHistoryRefresh)
+                        .addGap(410, 410, 410))))
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel4Layout.createSequentialGroup()
-                .addGap(33, 33, 33)
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel23, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(txtIncomeType, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnHistoryRefresh))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel22, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(txtIncomeModel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel24, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(txtIncomeNo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel26, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(txtIncomeID, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel27, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(txtIncomeCost, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel25, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(txtIncomeDate, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(31, 31, 31)
-                .addComponent(btnIncomeNext)
-                .addContainerGap(41, Short.MAX_VALUE))
+                    .addComponent(jLabel39)
+                    .addComponent(jLabel40))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(btnHistoryRefresh)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 19, Short.MAX_VALUE)
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(jPanel4Layout.createSequentialGroup()
+                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel33, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txtIncomeType1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
+                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel34, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txtIncomeModel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel35, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txtIncomeNo1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
+                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel36, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txtIncomeID1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
+                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel37, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txtIncomeCost1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
+                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel38, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txtIncomeDate1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
+                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(btnIncomeNext1)
+                            .addComponent(prev)
+                            .addComponent(next)
+                            .addComponent(btnIncomeNext)))
+                    .addGroup(jPanel4Layout.createSequentialGroup()
+                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel23, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txtIncomeType, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
+                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel22, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txtIncomeModel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel24, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txtIncomeNo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
+                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel26, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txtIncomeID, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
+                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel27, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txtIncomeCost, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
+                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel25, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txtIncomeDate, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(41, 41, 41)))
+                .addGap(17, 17, 17))
         );
 
         jTabbedPane1.addTab("Services that completed today", jPanel4);
@@ -641,7 +781,7 @@ public class VehicleDashBoard extends javax.swing.JFrame {
                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel6Layout.createSequentialGroup()
                         .addComponent(txtHistoryType, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 154, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 174, Short.MAX_VALUE)
                         .addComponent(txtRefresh)
                         .addGap(95, 95, 95))
                     .addGroup(jPanel6Layout.createSequentialGroup()
@@ -691,7 +831,7 @@ public class VehicleDashBoard extends javax.swing.JFrame {
                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel29)
                     .addComponent(txtHistoryDate, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 46, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 71, Short.MAX_VALUE)
                 .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(txtHistoryPrev)
                     .addComponent(txtHistoryNext))
@@ -755,7 +895,7 @@ public class VehicleDashBoard extends javax.swing.JFrame {
                     .addGroup(jPanel5Layout.createSequentialGroup()
                         .addGap(452, 452, 452)
                         .addComponent(jButton1)))
-                .addContainerGap(325, Short.MAX_VALUE))
+                .addContainerGap(345, Short.MAX_VALUE))
         );
         jPanel5Layout.setVerticalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -776,7 +916,7 @@ public class VehicleDashBoard extends javax.swing.JFrame {
                 .addGroup(jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel30, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(txtMaxNo, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 33, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 58, Short.MAX_VALUE)
                 .addComponent(jButton1)
                 .addGap(64, 64, 64))
         );
@@ -801,8 +941,9 @@ public class VehicleDashBoard extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGap(28, 28, 28)
                 .addComponent(jLabel1)
-                .addGap(45, 45, 45)
-                .addComponent(jTabbedPane1))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 75, Short.MAX_VALUE)
+                .addComponent(jTabbedPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 428, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
 
         pack();
@@ -938,7 +1079,8 @@ public class VehicleDashBoard extends javax.swing.JFrame {
       String Date = txtServiceDate.getText();
       
       
-      is.push(afterType, afterModel, afterNo, afterID, RepairCost, Date);
+      is.push(afterType, afterModel, afterNo, afterID, RepairCost, Date);//pushing nest
+      hs.insertHistory(afterType, afterModel, afterNo, afterID, RepairCost, Date);// Insert to linkedlist
         
        String toCompleteType = sq.serviceApprovedType();
        String toCompleteModel = sq.serviceApprovedModel();
@@ -961,19 +1103,23 @@ public class VehicleDashBoard extends javax.swing.JFrame {
 
     //Creating a object for history class
     History h = new History();
+    History hs = new History();// new object of linkedlist
+    Node sh; // Variable from a node class. To store current node and etc. Used to implemet linkedlist
+    Node storeTop;// To reetrieve the top of the stack
     private void btnHistoryRefreshActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnHistoryRefreshActionPerformed
         // TODO add your handling code here:
-         is.tempDisplay();
-        String historyType = is.popType();
-        String historyModel = is.popModel();
-        String historyNo = is.popNo();
-        int ID = is.popID();
+        storeTop =is.top;
+        is.tempDisplay();
+        String historyType = storeTop.type;
+        String historyModel = storeTop.model;
+        String historyNo = storeTop.No;
+        int ID = storeTop.ID;
         String historyID = Integer.toString(ID);
-        double income = is.popServiceCost();
+        double income = storeTop.serviceIncome;
         String historyIncome = Double.toString(is.popServiceCost());
-        String date = is.popCompletedDate();
+        String date = storeTop.date;
         
-        h.insertHistory(historyType, historyModel, historyNo, ID, income, historyType);
+        //h.insertHistory(historyType, historyModel, historyNo, ID, income, historyType);
         //mi.insert(income);
         
         txtIncomeType.setText(historyType);
@@ -983,11 +1129,55 @@ public class VehicleDashBoard extends javax.swing.JFrame {
         txtIncomeCost.setText(historyIncome);
         txtIncomeDate.setText(date);
         
+        sh=hs.head;
+        String type = sh.type;
+        String model = sh.model;
+        String no = sh.No;
+        String id= Integer.toString(sh.ID);
+        String incomes =Double.toString(sh.serviceIncome);
+        String Date = sh.date;
+        
+        txtIncomeType1.setText(type);
+        txtIncomeModel1.setText(model);
+        txtIncomeNo1.setText(no);
+        txtIncomeID1.setText(id);
+        txtIncomeCost1.setText(incomes);
+        txtIncomeDate1.setText(Date);
         
         
     }//GEN-LAST:event_btnHistoryRefreshActionPerformed
         MaxIncome mi = new MaxIncome();
-
+        //Deleting from stack
+        public void deleteAtEnd() {
+		if(hs.head == null) {
+			hs.head = null;
+		}else{
+		Node current_node = hs.head;
+		Node previous_node = null;
+		
+		while(current_node.Next != null) {
+			previous_node = current_node;
+			current_node = current_node.Next;
+		}
+		current_node.Prev = null;
+		previous_node.Next = null;
+                }
+	}
+        // Delete a node when deleting from the late payment method
+        public void deletenode() {
+		if(hs.head == null) {
+                    hs.head = null;
+		}else if(hs.head == sh){
+                    hs.head = hs.head.Next;
+                }
+                else{
+                sh.Prev.Next=sh.Next;
+                sh.Next.Prev=sh.Prev;
+                sh.Next=null;
+                sh.Prev=null;
+                }
+                sh=sh.Next;
+	}
     private void btnIncomeNextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnIncomeNextActionPerformed
         // TODO add your handling code here:
         
@@ -1011,22 +1201,39 @@ public class VehicleDashBoard extends javax.swing.JFrame {
         txtIncomeID.setText(historyID);
         txtIncomeCost.setText(historyIncome);
         txtIncomeDate.setText(date);
+        deleteAtEnd();
     }//GEN-LAST:event_btnIncomeNextActionPerformed
+
+       Node max;
+       Node details;
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-        double max = mi.maxIncome();
-        txtMaxIncome.setText(Double.toString(max));
+        double maximum = mi.maxIncome();
+        txtMaxIncome.setText(Double.toString(maximum));
         
-        String type = h.findTypeByIncome(max);
-        String model = h.findModelByIncome(max);
-        String no = h.findNoByIncome(max);
+        details = findTypeByIncome(maximum);
         
-        txtMaxType.setText(type);
-        txtMaxModel.setText(model);
-        txtMaxNo.setText(no);
+        
+        txtMaxType.setText(details.type);
+        txtMaxModel.setText(details.model);
+        txtMaxNo.setText(details.No);
     }//GEN-LAST:event_jButton1ActionPerformed
 
+      public Node findTypeByIncome(double searchIncome) {
+        max = h.head;
+
+        while (max != null) {
+            if (max.serviceIncome == searchIncome) {
+                return max;
+            }else{
+
+            max = max.Next;
+            }
+        }
+
+        return null;
+    }
     private void txtRefreshActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtRefreshActionPerformed
         // TODO add your handling code here:
         String type = h.returninHisotryType();
@@ -1079,6 +1286,79 @@ public class VehicleDashBoard extends javax.swing.JFrame {
         txtHistoryDate.setText(Date);
     }//GEN-LAST:event_txtHistoryPrevActionPerformed
 
+    private void btnIncomeNext1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnIncomeNext1ActionPerformed
+        // TODO add your handling code here:
+        //double newIncome = Double.parseDouble(txtIncomeCost.getText());
+        
+        String historyType = sh.type;
+        String historyModel = sh.model;
+        String historyNo = sh.No;
+        int ID = sh.ID;
+        String historyID = Integer.toString(ID);
+        double income = sh.serviceIncome;
+        String historyIncome = Double.toString(income);
+        String date = sh.date;
+        
+        h.insertHistory(historyType, historyModel, historyNo, ID, income, historyType);
+        
+        mi.insert(income);
+        
+        txtIncomeType1.setText(historyType);
+        txtIncomeModel1.setText(historyModel);
+        txtIncomeNo1.setText(historyNo);
+        txtIncomeID1.setText(historyID);
+        txtIncomeCost1.setText(historyIncome);
+        txtIncomeDate1.setText(date);
+        
+        deletenode();
+    }//GEN-LAST:event_btnIncomeNext1ActionPerformed
+
+    private void prevActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_prevActionPerformed
+        // TODO add your handling code here:
+        try{
+            sh=sh.Prev;
+            String type = sh.type;
+            String model = sh.model;
+            String no = sh.No;
+            String id= Integer.toString(sh.ID);
+            String incomes =Double.toString(sh.serviceIncome);
+            String Date = sh.date;
+
+            txtIncomeType1.setText(type);
+            txtIncomeModel1.setText(model);
+            txtIncomeNo1.setText(no);
+            txtIncomeID1.setText(id);
+            txtIncomeCost1.setText(incomes);
+            txtIncomeDate1.setText(Date);
+        }catch(Exception es){
+            JOptionPane.showMessageDialog(null,"List is Empty");
+            sh=hs.head;
+        }
+    }//GEN-LAST:event_prevActionPerformed
+
+    private void nextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nextActionPerformed
+        // TODO add your handling code here:
+        try{
+            sh=sh.Next;
+            String type = sh.type;
+            String model = sh.model;
+            String no = sh.No;
+            String id= Integer.toString(sh.ID);
+            String incomes =Double.toString(sh.serviceIncome);
+            String Date = sh.date;
+
+            txtIncomeType1.setText(type);
+            txtIncomeModel1.setText(model);
+            txtIncomeNo1.setText(no);
+            txtIncomeID1.setText(id);
+            txtIncomeCost1.setText(incomes);
+            txtIncomeDate1.setText(Date);
+        }catch(Exception e){
+            JOptionPane.showMessageDialog(null,"List is Empty");
+            sh=sh.Prev;
+        }
+    }//GEN-LAST:event_nextActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -1119,6 +1399,7 @@ public class VehicleDashBoard extends javax.swing.JFrame {
     private javax.swing.JButton btnCompleted1;
     private javax.swing.JButton btnHistoryRefresh;
     private javax.swing.JButton btnIncomeNext;
+    private javax.swing.JButton btnIncomeNext1;
     private javax.swing.JButton btnNext;
     private javax.swing.JButton btnPrev;
     private javax.swing.JButton btnRefresh;
@@ -1150,7 +1431,15 @@ public class VehicleDashBoard extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel30;
     private javax.swing.JLabel jLabel31;
     private javax.swing.JLabel jLabel32;
+    private javax.swing.JLabel jLabel33;
+    private javax.swing.JLabel jLabel34;
+    private javax.swing.JLabel jLabel35;
+    private javax.swing.JLabel jLabel36;
+    private javax.swing.JLabel jLabel37;
+    private javax.swing.JLabel jLabel38;
+    private javax.swing.JLabel jLabel39;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel40;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
@@ -1163,6 +1452,8 @@ public class VehicleDashBoard extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel5;
     private javax.swing.JPanel jPanel6;
     private javax.swing.JTabbedPane jTabbedPane1;
+    private javax.swing.JButton next;
+    private javax.swing.JButton prev;
     private javax.swing.JTextField txtCID;
     private javax.swing.JTextField txtCModel;
     private javax.swing.JTextField txtCNo;
@@ -1176,11 +1467,17 @@ public class VehicleDashBoard extends javax.swing.JFrame {
     private javax.swing.JButton txtHistoryPrev;
     private javax.swing.JTextField txtHistoryType;
     private javax.swing.JTextField txtIncomeCost;
+    private javax.swing.JTextField txtIncomeCost1;
     private javax.swing.JTextField txtIncomeDate;
+    private javax.swing.JTextField txtIncomeDate1;
     private javax.swing.JTextField txtIncomeID;
+    private javax.swing.JTextField txtIncomeID1;
     private javax.swing.JTextField txtIncomeModel;
+    private javax.swing.JTextField txtIncomeModel1;
     private javax.swing.JTextField txtIncomeNo;
+    private javax.swing.JTextField txtIncomeNo1;
     private javax.swing.JTextField txtIncomeType;
+    private javax.swing.JTextField txtIncomeType1;
     private javax.swing.JTextField txtMaxIncome;
     private javax.swing.JTextField txtMaxModel;
     private javax.swing.JTextField txtMaxNo;
